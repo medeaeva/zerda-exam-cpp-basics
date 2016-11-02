@@ -1,7 +1,3 @@
-#include <iostream>
-
-using namespace std;
-
 /** 
  * Create a function that prints a multiplication table with a given base number
  * It should take the base number as a parameter, and print the output to the cout
@@ -19,9 +15,21 @@ using namespace std;
  *   10 * 5 = 50
  */
 
+#include <iostream>
+#include <string>
 
-int main() {
+using namespace std;
 
-  return 0;
+void multiply (int base) {
+  for (int i = 1; i <= 10; i++) {
+    cout << i << " * " << base << " = " << i * base << endl;
+  }
 }
 
+int main() {
+  cout << "Plz give me a number!" << endl;
+  int number;
+  cin >> number;
+  multiply (number);
+  return 0;
+}
